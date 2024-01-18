@@ -22,7 +22,8 @@ async def main():
     end = time.time()
     print(task1)
     print(f"task1 completed in {end - start}")
-    print(task2)
+    # print(task2) it returns None so
+    task2
     print(f"task2 completed in {end - start}")
 
 if __name__ == "__main__":
