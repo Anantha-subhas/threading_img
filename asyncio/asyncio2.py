@@ -21,6 +21,7 @@ async def mains():
     # batch of co-routines
     # batch = asyncio.gather(brewCoffee(), toastBagel())  # co-routine objects
     # result_coffee, result_bagel =  await batch
+    #create a separate co-routines
     coffee_task = asyncio.create_task(brewCoffee())
     toast_task = asyncio.create_task(toastBagel())
     result_coffee = await coffee_task
